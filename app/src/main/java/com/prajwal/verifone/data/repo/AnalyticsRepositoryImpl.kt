@@ -71,7 +71,7 @@ class AnalyticsRepositoryImpl @Inject constructor(
             withContext(Dispatchers.Main) {
                 Toast.makeText(
                     context,
-                    "Permission denied to access Analytics Service",
+                    e.message,
                     Toast.LENGTH_LONG
                 ).show()
             }
@@ -80,7 +80,7 @@ class AnalyticsRepositoryImpl @Inject constructor(
             withContext(Dispatchers.Main) {
                 Toast.makeText(
                     context,
-                    "Failed to connect to Analytics Service",
+                    e.message,
                     Toast.LENGTH_LONG
                 ).show()
             }
